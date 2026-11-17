@@ -54,3 +54,75 @@ footer {
   background: #333;
   color: #fff;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+nav {
+  flex-wrap: wrap;
+  gap: 1rem 2rem;
+  padding: 0 1rem;
+}
+
+nav a.active {
+  text-decoration: underline;
+}
+
+section h2 {
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 0.25rem;
+}
+
+a {
+  color: #2a5db0;
+}
+
+.hero .links a {
+  margin: 0 0.25rem;
+}
+
+.entry {
+  margin-bottom: 1.5rem;
+}
+
+.entry-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.entry-header h3 {
+  margin: 0;
+}
+
+.date {
+  color: #666;
+  white-space: nowrap;
+}
+
+.subtitle {
+  margin: 0.25rem 0;
+  color: #555;
+  font-style: italic;
+  overflow-wrap: anywhere;
+}
+
+.entry ul,
+.card ul {
+  margin-top: 0.5rem;
+}
+
+@media (max-width: 600px) {
+  section {
+    padding: 2rem 1rem;
+  }
+}

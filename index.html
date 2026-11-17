@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shamiya's Portfolio</title>
-    <link rel="stylesheet" href="css\styles.css">
+    <title>Shamiya Rahmathulla</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/main.js" defer></script>
 </head>
 
 <body>
@@ -12,53 +13,129 @@
 <header>
     <nav>
         <a href="#home">Home</a>
+        <a href="#education">Education</a>
+        <a href="#experience">Experience</a>
         <a href="#projects">Projects</a>
-        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
         <a href="#contact">Contact</a>
     </nav>
 </header>
 
+<main>
+
 <section id="home" class="hero">
     <h1>Shamiya Rahmathulla</h1>
-    <p>Computer Science Student | Developer</p>
-    <p>[blah blah blah]</p>
+    <p>Computer Science Graduate | Software Developer</p>
+    <p class="links">
+        <a href="https://github.com/slicedsoap">GitHub</a> |
+        <a href="https://www.linkedin.com/in/shamiya-rahmathulla">LinkedIn</a> |
+        <a href="mailto:ssr102403@gmail.com">Email</a>
+    </p>
+</section>
+
+<section id="education">
+    <h2>Education</h2>
+    <div class="entry">
+        <div class="entry-header">
+            <h3>North Carolina State University</h3>
+            <span class="date">Aug 2022 – May 2026</span>
+        </div>
+        <p class="subtitle">Bachelor of Science in Computer Science, Minor in Philosophy · Raleigh, NC</p>
+        <h4>Relevant Coursework</h4>
+        <ul>
+            <li>Concepts and Facilities of Operating Systems</li>
+            <li>Data and Computer Communication Networks</li>
+            <li>Game Engine Fundamentals</li>
+            <li>Applied Web-based Client-Server Computing</li>
+        </ul>
+    </div>
+</section>
+
+<section id="experience">
+    <h2>Experience</h2>
+
+    <div class="entry">
+        <div class="entry-header">
+            <h3>WolfNotes – Progressive Web App</h3>
+            <span class="date">Aug 2025 – Dec 2025</span>
+        </div>
+        <p class="subtitle">
+            North Carolina State University · Raleigh, NC ·
+            <a href="https://github.com/slicedsoap/WolfNotes">github.com/slicedsoap/WolfNotes</a>
+        </p>
+        <ul>
+            <li>Designed and implemented a full-stack web app for students and instructors to share course materials.</li>
+        </ul>
+    </div>
+
+    <div class="entry">
+        <div class="entry-header">
+            <h3>P2P System for Downloading RFCs – Python Project</h3>
+            <span class="date">Jan 2025 – Apr 2025</span>
+        </div>
+        <p class="subtitle">
+            North Carolina State University · Raleigh, NC ·
+            <a href="https://github.com/slicedsoap/Networking_Project">github.com/slicedsoap/Networking_Project</a>
+        </p>
+        <ul>
+            <li>Designed and implemented a peer-to-peer system with a centralized index.</li>
+            <li>Wrote a concurrent server that can communicate with multiple clients simultaneously.</li>
+        </ul>
+    </div>
+
+    <div class="entry">
+        <div class="entry-header">
+            <h3>Game Engine – C++ Project</h3>
+            <span class="date">Aug 2024 – Dec 2024</span>
+        </div>
+        <p class="subtitle">
+            North Carolina State University · Raleigh, NC ·
+            <a href="https://github.com/slicedsoap/Game_Engine">github.com/slicedsoap/Game_Engine</a>
+        </p>
+        <ul>
+            <li>Designed and implemented a computer game engine.</li>
+            <li>Utilized ZeroMQ to create a client-server setup.</li>
+            <li>Built multithreaded loop architecture to implement an asynchronous server design.</li>
+        </ul>
+    </div>
 </section>
 
 <section id="projects">
     <h2>Projects</h2>
     <div class="projects">
         <div class="card">
-            <h3>Project One</h3>
-            <p>Short description of project.</p>
-        </div>
-
-        <div class="card">
-            <h3>Project Two</h3>
-            <p>Short description of project.</p>
-        </div>
-
-        <div class="card">
-            <h3>Project Three</h3>
-            <p>Short description of project.</p>
+            <div class="entry-header">
+                <h3>Lab Rat</h3>
+                <span class="date">Oct 2024</span>
+            </div>
+            <p class="subtitle">Godot · <a href="https://github.com/slicedsoap/Lab_Rat">github.com/slicedsoap/Lab_Rat</a></p>
+            <ul>
+                <li>Designed and programmed a 2D platformer video game.</li>
+                <li>Planned and scheduled tasks to work efficiently over a short period of time.</li>
+                <li>Collaborated with a teammate both remotely and in person.</li>
+            </ul>
         </div>
     </div>
 </section>
 
-<section id="about">
-    <h2>About Me</h2>
-    <p>
-        
-    </p>
+<section id="skills">
+    <h2>Technical Skills</h2>
+    <p><strong>Languages:</strong> Java, Python, C/C++, SQL, JavaScript, HTML/CSS, R</p>
+    <p><strong>Frameworks:</strong> React, Node.js, JUnit</p>
+    <p><strong>Developer Tools:</strong> Git, Docker, VS Code, Visual Studio, Eclipse</p>
 </section>
 
 <section id="contact">
     <h2>Contact</h2>
-    <p>Email: ssr102403@email.com</p>
-    <p>GitHub: github.com/slicedsoap</p>
+    <p>Email: <a href="mailto:ssr102403@gmail.com">ssr102403@gmail.com</a></p>
+    <p>GitHub: <a href="https://github.com/slicedsoap">github.com/slicedsoap</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/shamiya-rahmathulla">linkedin.com/in/shamiya-rahmathulla</a></p>
 </section>
 
+</main>
+
 <footer>
-    <p>© 2026 Shamiya Rahmathulla</p>
+    <p>© <span id="year">2026</span> Shamiya Rahmathulla</p>
 </footer>
 
 </body>
